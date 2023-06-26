@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>IPL-cricket league</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <img
+            class="ipl_logo"
+            src="https://pixlok.com/wp-content/uploads/2021/04/IPL-Logo-PNG-300x300.jpg"
+            alt="Logo"
+          />
+        </div>
+        <div class="nav_item_list">
+          <a class="nav_item" href="#Home"
+            ><button id="homeBtn" class="home_btn">Home</button></a
+          >
+          <a class="nav_item" href="#"
+            ><button id="homeBtn" class="home_btn">Points_Table</button></a
+          >
+          <a class="nav_item" href="#"
+            ><button id="homeBtn" class="home_btn">News</button></a
+          >
+          <a class="nav_item" href="#"
+            ><button id="homeBtn" class="home_btn">Matches</button></a
+          >
+        </div>
+        <form class="search_Bar" action="">
+          <input
+            class="search_input"
+            type="text"
+            placeholder="Search by Team code"
+            name="search"
+          />
+          <button type="submit">
+            <img
+              class="Search_Icon"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"
+            />
+          </button>
+        </form>
+        <div class="buttons">
+          <button class="new_btn" id="addTeamButton">Add Team</button>
+          <div id="teamFormContainer" style="display: none;">
+            <form id="teamForm">
+              <label for="teamName" class="labels">Team Name:</label>
+              <input type="text" id="teamName" name="teamName" />
+
+              <label for="teamOwner" class="labels">Team Owner:</label>
+              <input type="text" id="teamOwner" name="teamOwner" />
+
+              <label for="teamOwner" class="labels">Player Count:</label>
+              <input type="text" id="teamOwner" name="teamOwner" />
+
+              <label for="teamOwner" class="labels">Captain Name:</label>
+              <input type="text" id="teamOwner" name="teamOwner" />
+              <input type="submit" class="inputs_btn" value="Submit" />
+            </form>
+          </div>
+
+          <button class="new_btn" id="addPlayerButton">Add Player</button>
+          <div id="PlayerFormContainer" style="display: none;">
+            <form id="teamForm">
+              <label for="teamName" class="labels">First Name:</label>
+              <input type="text" id="teamName" name="teamName" />
+
+              <label for="teamOwner" class="labels">Last Name :</label>
+              <input type="text" id="teamOwner" name="teamOwner" />
+
+              <label for="teamOwner" class="labels">Team want to join:</label>
+              <input type="text" id="teamOwner" name="teamOwner" />
+
+              <label for="teamOwner" class="labels">Description:</label>
+              <input type="text" id="teamOwner" name="teamOwner" />
+              <input type="submit" class="inputs_btn" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <section class="slick_container">
+        <img
+          src="https://www.insidesport.in/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-29-at-09.56.26.jpg?w=690"
+        />
+        <img
+          src="https://img.cricketnmore.com/uploads/2020/09/IPL-2020-Team-Captains.jpg"
+        />
+        <img
+          src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/67351d5a-b913-4b49-bb2c-5ab12aa79722/b7ed3571-f518-4946-b610-70b1ee573b0e/1280x720/match/image.jpg"
+        />
+        <img
+          src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/2c7f4930-be56-4a57-ac5d-a1369e72cb3d/01226604-ee83-44fb-9ffa-a78a347af14c/1280x720/match/image.jpg"
+        />
+      </section>
+      <section class="title">
+        <h1>IPL TEAMS</h1>
+        <div id="teams_blog"></div>
+      </section>
+
+      <footer class="footer" style="background-color: #3a3d3f;">
+        <div class="container p-4">
+          <div class="footer_video">
+            <iframe
+              width="560"
+              height="250"
+              src="https://www.youtube.com/embed/5G153F_fCyk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="footer_copy">
+          © 2023 Copyright :
+          <a class="footer_copy" href="#">IPL Cricket.com</a>
+        </div>
+      </footer>
+
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="./script.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #19398A;
+}
+.ipl_logo{
+    margin-left: 5px;
+    margin-top: 4px;
+    height: 70px; 
+    width: 130px;
+
+}
+.nav_item_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_item{
+    margin: 10px;
+    padding: 5px;
+}
+.home_btn{
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    width: 90px;
+
+}
+.slick_container{
+    height: 400px;
+  position: relative;
+  display: flex;
+}
+.slick_container img{
+    height: 400px;
+    width: 100%;
+}
+
+.search_Bar{
+    margin-right: 25px;
+}
+.search_input{
+    width:250px;
+    height:30px;
+    border: none;
+}
+.search_Bar button {
+    position: absolute;
+    top: 35px;
+    color: #f2f2f2;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: -4px;
+    width: 30px;
+}
+.Search_Icon {
+    margin-left: -8px;
+    margin-bottom: 4px;
+    height: 30px;
+    width: 30px;
+}
+.buttons{
+    margin-right: 20px;
+}
+.new_btn{
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.footer_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+.footer_copy{
+    font-size: 20px;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+.section{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 200px;
+}
+#teams_blog{
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	padding: 10px;
+    height: auto;
+   
+}
+.title{
+    color: #19398A;
+   text-align: center;
+   margin-top: 70px;
+   font-size: 28px;
+}
+.Teams_card{
+    height: 200px;
+    width: 250px;
+    margin: 30px;
+    margin-bottom: 50px;
+    border: 1px solid blueviolet;
+    background-color: rgb(155, 155, 199);
+    background-image: url("https://www.icccricketschedule.com/wp-content/uploads/2016/03/cricket-stadium-backround-1.jpg") ;
+    background-size: cover;
+    transition: box-shadow .3s;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.Teams_card:hover{
+    box-shadow: 0 0 11px rgba(90, 84, 179, 0.2); 
+}
+.team_image{
+     height: 200px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.team_image img{
+    height: 150px;
+    width: 150px;
+}
+.nameSec{
+    background-color: rgb(26, 184, 123);
+    background-image: url("https://www.shutterstock.com/image-photo/bangalore-india-march-27-2019m-260nw-1357735751.jpg");
+    height: 50px;
+   padding-top: 10px;
+    width: 250px;
+    border: 1px solid blueviolet;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: box-shadow .3s;
+    margin-left: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Team_Name{
+    margin: 10px;
+    font-size: initial;
+    color: rgb(237, 239, 243);
+    font-stretch: expanded;
+    font-weight: 900;
+}
+#teamFormContainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    right: 50px;
+    width: 320px; 
+    background-color: rgb(157, 179, 197);
+    padding: 10px;
+}
+#teamForm input{
+    width: 300px;
+    margin-bottom: 10px;
+    height: 20px;
+}
+.labels{
+    margin-bottom: 20px;
+}
+#teamForm input:last-child{
+    width: 75px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(129, 129, 206);
+    border: 1px solid  rgb(130, 130, 202);
+}
+#teamForm label{
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(153, 32, 32);
+}
+#PlayerFormContainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    right: 50px;
+    width: 320px; 
+    background-color: rgb(157, 179, 197);
+    padding: 10px;
+}
